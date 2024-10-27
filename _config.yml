@@ -1,0 +1,108 @@
+# Site
+repository: sproogen/resume-theme
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: Simon Bertlin
+title: Senior Software Developer
+email: Simon.bertlin@gmail.com
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+github_username:  simon-bertlin
+linkedin_username: simon-bertlin-81397b197
+
+# Additional icon links
+additional_links:
+- title: Thesis
+  icon: fas fa-book
+  url: https://www.diva-portal.org/smash/get/diva2:1446560/FULLTEXT01.pdf
+
+# About Section
+about_title: Om mig
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Jag heter Simon Bertlin och är en senior systemutvecklare med specialisering inom Java och Python. Jag brinner för backend-utveckling och att förstå hur saker fungerar bakom kulisserna.
+  Med flera års erfarenhet av mjukvaruutveckling tar jag gärna initiativ och ansvar för att nå goda resultat. Jag trivs både med självständigt arbete och i team, och värdesätter samarbete och kunskapsdelning.
+content:
+  - title: Erfarenhet # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Digg
+        link: https://www.digg.se/
+        link_text: Digg.se
+        sub_title: Software Developer → Senior Software Developer
+        caption: 2022 - Present
+        description: | # this will include new lines to allow paragraphs
+          **Senior Software Developer**
+          * Ledde utvecklingen inom SDG-projektet (Single Digital Gateway) med fokus på Java och Quarkus.
+          * Designade och optimerade effektiva och skalbara mikrotjänster.
+          * Utvecklade API för sömlös integration med andra system.
+          * Arbetade nära arkitekter för att forma projektets tekniska riktning.
+          * Deltog i rekrytering av nya utvecklare till SDG-teamet.
+          * Representerade Sverige vid flera evenemang med Europeiska kommissionen i Bryssel.
+      - layout: left
+        title: Knightec
+        link: https://knightec.se/
+        link_text: Knightec
+        sub_title: Software Developer → Test Automation Lead
+        caption: 2020 - 2022
+        description: | # this will include new lines to allow paragraphs
+          **Test Automation Lead**
+          * Tog en ledande roll för att styra upp E2E testning inom Touchpoint-ekosystemet.
+          * Ledde testautomationsprojekten för att förbättra kvalitet och effektivitet.
+          * Organiserade workshops för kunskapsdelning inom teamet.
+          * Utvecklade en testsvit för iOS-applikationen Touchpoint.
+          * Automatiserade E2E-flödet för Touchpoint-ekosystemet.
+
+
+  - title: Kompetenser # Title for the section
+    layout: text # Using a single text layout for the table
+    content: |
+      | **<span style="font-size: 1.7em;">Kategori</span>** | **<span style="font-size: 1.7em;">Kompetenser</span>**                                                                                   |
+      |-----------------------------------------------------|------------------------------------------------------------------------------------------------|
+      | **<span style="font-size: 1.5em;">Programmeringsspråk</span>** | ![Java](https://img.shields.io/badge/-Java-blue) ![Python](https://img.shields.io/badge/-Python-blue) ![C++](https://img.shields.io/badge/-C++-blue) ![TypeScript](https://img.shields.io/badge/-TypeScript-blue) |
+      | **<span style="font-size: 1.5em;">Verktyg och Tekniker</span>** | ![Git](https://img.shields.io/badge/-Git-blue) ![Docker](https://img.shields.io/badge/-Docker-blue) ![OpenShift](https://img.shields.io/badge/-OpenShift-blue) ![Kubernetes](https://img.shields.io/badge/-Kubernetes-blue) ![SQL](https://img.shields.io/badge/-SQL-blue) ![Jira](https://img.shields.io/badge/-Jira-blue) ![Confluence](https://img.shields.io/badge/-Confluence-blue) ![Bitbucket](https://img.shields.io/badge/-Bitbucket-blue) |
+      | **<span style="font-size: 1.5em;">Ramverk</span>** | ![Quarkus](https://img.shields.io/badge/-Quarkus-blue) ![Hibernate](https://img.shields.io/badge/-Hibernate-blue) |
+      | **<span style="font-size: 1.5em;">Arbetsmetoder</span>** | ![Agile](https://img.shields.io/badge/-Agile-blue) ![Scrum](https://img.shields.io/badge/-Scrum-blue) ![SAFe](https://img.shields.io/badge/-SAFe-blue) ![DevOps](https://img.shields.io/badge/-DevOps-blue) ![TDD](https://img.shields.io/badge/-TDD-blue) |
+      | **<span style="font-size: 1.5em;">Övrigt</span>** | ![Säkerhetsmedvetenhet](https://img.shields.io/badge/-Säkerhetsmedvetenhet-blue) ![Mikrotjänstarkitektur](https://img.shields.io/badge/-Mikrotjänstarkitektur-blue) ![RESTful API](https://img.shields.io/badge/-RESTful%20API-blue) |
+
+  - title: Utbildning # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        title: Mittuniversitetet
+        caption: 2017 - 2020
+        sub_title: Kandidatexamen i datavetenskap
+        description: | # this will include new lines to allow paragraphs
+          * Arbetade som labbassistent i kurser som Programmeringsintroduktion och Operativsystem.
+          * Examensarbete inom automatiserad testning och integration med Jira och Xray.
+
+  - title: Extra om mig
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      Utöver mitt intresse för mjukvaruutveckling tycker jag också om:
+
+      * Träning
+      * Gaming – särskilt Factorio och Call of Duty
+      * Hemautomation
+      * Pussel och escape rooms
+# Footer
+footer_show_references: true
+references_title: Referenser tillgängliga på begäran
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
